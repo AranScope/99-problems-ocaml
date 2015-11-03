@@ -1,0 +1,5 @@
+let rec lastButOne = function
+| [] -> None
+| [x] -> None
+| [x;y] -> Some x
+| hd :: tl -> lastButOne tl;;

@@ -1,0 +1,6 @@
+let rec lengthOfList lst n = match lst with
+| [] -> None
+| [x] -> Some n
+| hd :: tl -> lengthOfList tl (n+1);;
+
+let length lst = lengthOfList lst 1;;

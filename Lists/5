@@ -1,0 +1,7 @@
+let rec reverse lst lst' =
+  match lst with
+  | [] -> failwith "empty list"
+  | [x] -> [x] @ lst'
+  | hd :: tl -> reverse tl ([hd] @ lst');;
+
+let rev lst = reverse lst [];;

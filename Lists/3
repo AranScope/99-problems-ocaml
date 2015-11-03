@@ -1,0 +1,4 @@
+let rec findKth lst k = match lst with
+| [] -> None
+| [x] -> if k = 0 then Some x else None
+| hd :: tl -> if k = 0 then Some hd else findKth tl (k-1);;
